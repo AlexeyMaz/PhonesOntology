@@ -1,0 +1,568 @@
+Prefix(:=<https://github.com/AlexeyMaz/PhonesOntology#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://github.com/AlexeyMaz/PhonesOntology>
+
+Declaration(Class(:Батарея))
+Declaration(Class(:Видеоускоритель))
+Declaration(Class(:Дисплей))
+Declaration(Class(:Железо))
+Declaration(Class(:Игровой_телефон))
+Declaration(Class(:Крепкий_телефон))
+Declaration(Class(:Материал_корпуса))
+Declaration(Class(:Модуль))
+Declaration(Class(:Недорогой_телефон))
+Declaration(Class(:ОЗУ))
+Declaration(Class(:Операционная_система))
+Declaration(Class(:ПЗУ))
+Declaration(Class(:Память))
+Declaration(Class(:Производитель))
+Declaration(Class(:Процессор))
+Declaration(Class(:Телефон))
+Declaration(Class(:Энергосберегающий_телефон))
+Declaration(ObjectProperty(:Имеет))
+Declaration(ObjectProperty(:Произведен))
+Declaration(ObjectProperty(:Работает_на))
+Declaration(ObjectProperty(:Сделан_из))
+Declaration(DataProperty(:Bluetooth))
+Declaration(DataProperty(:WIFI))
+Declaration(DataProperty(:Вес))
+Declaration(DataProperty(:Гарантия_мес))
+Declaration(DataProperty(:Имеет_диагональ))
+Declaration(DataProperty(:Имеет_емкость))
+Declaration(DataProperty(:Имеет_объем_ОЗУ))
+Declaration(DataProperty(:Имеет_объем_ПЗУ))
+Declaration(DataProperty(:Имеет_разрешение_дисплея))
+Declaration(DataProperty(:Имеет_тип_дисплея))
+Declaration(DataProperty(:Имеет_цену))
+Declaration(DataProperty(:Имеет_частоту))
+Declaration(DataProperty(:Имеет_число_ядер))
+Declaration(DataProperty(:Цвет))
+Declaration(NamedIndividual(:ASUS))
+Declaration(NamedIndividual(:Adreno))
+Declaration(NamedIndividual(:Adreno_660))
+Declaration(NamedIndividual(:Android))
+Declaration(NamedIndividual(:Apple))
+Declaration(NamedIndividual(:Apple_A15_Bionic))
+Declaration(NamedIndividual(:Apple_A15_GPU))
+Declaration(NamedIndividual(:Google))
+Declaration(NamedIndividual(:Google_Pixel_6))
+Declaration(NamedIndividual(:HiSilicon_Kirin_9000))
+Declaration(NamedIndividual(:Huawei))
+Declaration(NamedIndividual(:IOS))
+Declaration(NamedIndividual(:Mali))
+Declaration(NamedIndividual(:Mali-G77_MC9))
+Declaration(NamedIndividual(:Mali-G78_MP14))
+Declaration(NamedIndividual(:Mali-G78_MP24))
+Declaration(NamedIndividual(:Mediatek_Dimensity_1200))
+Declaration(NamedIndividual(:OnePlus))
+Declaration(NamedIndividual(:OnePlus_9))
+Declaration(NamedIndividual(:Qualcomm_Snapdragon_888))
+Declaration(NamedIndividual(:Realme))
+Declaration(NamedIndividual(:Samsung))
+Declaration(NamedIndividual(:Samsung_Exynos_2100))
+Declaration(NamedIndividual(:Samsung_Galaxy_S21))
+Declaration(NamedIndividual(:Xiaomi))
+Declaration(NamedIndividual(:Xiaomi_Mi_11))
+Declaration(NamedIndividual(:iPhone_15))
+Declaration(NamedIndividual(:Желтый))
+Declaration(NamedIndividual(:Зеленый))
+Declaration(NamedIndividual(:Красный))
+Declaration(NamedIndividual(:МОДУЛЬ_WIFI_BLUETOOTH))
+Declaration(NamedIndividual(:Металл))
+Declaration(NamedIndividual(:Пластик))
+Declaration(NamedIndividual(:Розовый))
+Declaration(NamedIndividual(:Синий))
+Declaration(NamedIndividual(:Стекло))
+Declaration(NamedIndividual(:Черный))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#12ГБ_LPDDR5X>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#128ГБ>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#16ГБ>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#16ГБ_LPDDR6>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#256ГБ>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#32ГБ>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#4ГБ_LPDDR4>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#6ГБ_LPDDR4X>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#64ГБ>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_3000мА*ч>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_4000мА*ч>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_5000мА*ч>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD>))
+Declaration(NamedIndividual(<https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED>))
+############################
+#   Object Properties
+############################
+
+# Object Property: :Имеет (:Имеет)
+
+TransitiveObjectProperty(:Имеет)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :Bluetooth (:Bluetooth)
+
+SubDataPropertyOf(:Bluetooth owl:topDataProperty)
+DataPropertyDomain(:Bluetooth :Модуль)
+DataPropertyRange(:Bluetooth xsd:boolean)
+
+# Data Property: :WIFI (:WIFI)
+
+SubDataPropertyOf(:WIFI owl:topDataProperty)
+DataPropertyDomain(:WIFI :Модуль)
+DataPropertyRange(:WIFI xsd:boolean)
+
+# Data Property: :Вес (:Вес)
+
+SubDataPropertyOf(:Вес owl:topDataProperty)
+DataPropertyDomain(:Вес :Телефон)
+DataPropertyRange(:Вес xsd:integer)
+
+# Data Property: :Гарантия_мес (:Гарантия_мес)
+
+SubDataPropertyOf(:Гарантия_мес owl:topDataProperty)
+DataPropertyDomain(:Гарантия_мес :Телефон)
+DataPropertyRange(:Гарантия_мес xsd:integer)
+
+# Data Property: :Имеет_диагональ (:Имеет_диагональ)
+
+SubDataPropertyOf(:Имеет_диагональ owl:topDataProperty)
+DataPropertyDomain(:Имеет_диагональ :Дисплей)
+DataPropertyRange(:Имеет_диагональ xsd:float)
+
+# Data Property: :Имеет_емкость (:Имеет_емкость)
+
+DataPropertyDomain(:Имеет_емкость :Батарея)
+DataPropertyRange(:Имеет_емкость xsd:integer)
+
+# Data Property: :Имеет_объем_ОЗУ (:Имеет_объем_ОЗУ)
+
+SubDataPropertyOf(:Имеет_объем_ОЗУ owl:topDataProperty)
+DataPropertyDomain(:Имеет_объем_ОЗУ :ОЗУ)
+DataPropertyRange(:Имеет_объем_ОЗУ xsd:integer)
+
+# Data Property: :Имеет_объем_ПЗУ (:Имеет_объем_ПЗУ)
+
+SubDataPropertyOf(:Имеет_объем_ПЗУ owl:topDataProperty)
+DataPropertyDomain(:Имеет_объем_ПЗУ :ПЗУ)
+DataPropertyRange(:Имеет_объем_ПЗУ xsd:integer)
+
+# Data Property: :Имеет_разрешение_дисплея (:Имеет_разрешение_дисплея)
+
+SubDataPropertyOf(:Имеет_разрешение_дисплея owl:topDataProperty)
+DataPropertyDomain(:Имеет_разрешение_дисплея :Дисплей)
+DataPropertyRange(:Имеет_разрешение_дисплея xsd:integer)
+
+# Data Property: :Имеет_тип_дисплея (:Имеет_тип_дисплея)
+
+SubDataPropertyOf(:Имеет_тип_дисплея owl:topDataProperty)
+DataPropertyDomain(:Имеет_тип_дисплея :Дисплей)
+DataPropertyRange(:Имеет_тип_дисплея xsd:string)
+
+# Data Property: :Имеет_цену (:Имеет_цену)
+
+SubDataPropertyOf(:Имеет_цену owl:topDataProperty)
+DataPropertyDomain(:Имеет_цену :Телефон)
+DataPropertyRange(:Имеет_цену xsd:integer)
+
+# Data Property: :Имеет_частоту (:Имеет_частоту)
+
+SubDataPropertyOf(:Имеет_частоту owl:topDataProperty)
+DataPropertyDomain(:Имеет_частоту :Процессор)
+DataPropertyRange(:Имеет_частоту xsd:float)
+
+# Data Property: :Имеет_число_ядер (:Имеет_число_ядер)
+
+SubDataPropertyOf(:Имеет_число_ядер owl:topDataProperty)
+DataPropertyDomain(:Имеет_число_ядер :Процессор)
+DataPropertyRange(:Имеет_число_ядер xsd:integer)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Батарея (:Батарея)
+
+SubClassOf(:Батарея :Железо)
+
+# Class: :Видеоускоритель (:Видеоускоритель)
+
+SubClassOf(:Видеоускоритель :Железо)
+
+# Class: :Дисплей (:Дисплей)
+
+SubClassOf(:Дисплей :Железо)
+
+# Class: :Железо (:Железо)
+
+SubClassOf(:Железо ObjectAllValuesFrom(:Произведен :Производитель))
+
+# Class: :Игровой_телефон (:Игровой_телефон)
+
+EquivalentClasses(:Игровой_телефон ObjectIntersectionOf(:Телефон DataSomeValuesFrom(:Имеет_разрешение_дисплея DatatypeRestriction(xsd:integer xsd:minInclusive "1080"^^xsd:integer))))
+SubClassOf(:Игровой_телефон :Телефон)
+
+# Class: :Крепкий_телефон (:Крепкий_телефон)
+
+EquivalentClasses(:Крепкий_телефон ObjectIntersectionOf(:Телефон ObjectHasValue(:Сделан_из :Металл)))
+SubClassOf(:Крепкий_телефон :Телефон)
+
+# Class: :Модуль (:Модуль)
+
+SubClassOf(:Модуль :Железо)
+
+# Class: :Недорогой_телефон (:Недорогой_телефон)
+
+EquivalentClasses(:Недорогой_телефон ObjectIntersectionOf(:Телефон DataSomeValuesFrom(:Имеет_цену DatatypeRestriction(xsd:integer xsd:maxExclusive "12000"^^xsd:integer))))
+SubClassOf(:Недорогой_телефон :Телефон)
+
+# Class: :ОЗУ (:ОЗУ)
+
+SubClassOf(:ОЗУ :Память)
+
+# Class: :ПЗУ (:ПЗУ)
+
+SubClassOf(:ПЗУ :Память)
+
+# Class: :Память (:Память)
+
+SubClassOf(:Память :Железо)
+
+# Class: :Процессор (:Процессор)
+
+SubClassOf(:Процессор :Железо)
+
+# Class: :Телефон (:Телефон)
+
+SubClassOf(:Телефон ObjectAllValuesFrom(:Произведен :Производитель))
+SubClassOf(:Телефон ObjectAllValuesFrom(:Работает_на :Операционная_система))
+SubClassOf(:Телефон ObjectAllValuesFrom(:Сделан_из :Материал_корпуса))
+
+# Class: :Энергосберегающий_телефон (:Энергосберегающий_телефон)
+
+EquivalentClasses(:Энергосберегающий_телефон ObjectIntersectionOf(:Телефон DataSomeValuesFrom(:Имеет_емкость DatatypeRestriction(xsd:integer xsd:minInclusive "5000"^^xsd:integer))))
+SubClassOf(:Энергосберегающий_телефон :Телефон)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :ASUS (:ASUS)
+
+ClassAssertion(:Производитель :ASUS)
+
+# Individual: :Adreno (:Adreno)
+
+ClassAssertion(:Производитель :Adreno)
+
+# Individual: :Adreno_660 (:Adreno_660)
+
+ClassAssertion(:Видеоускоритель :Adreno_660)
+ObjectPropertyAssertion(:Произведен :Adreno_660 :Adreno)
+
+# Individual: :Android (:Android)
+
+ClassAssertion(:Операционная_система :Android)
+
+# Individual: :Apple (:Apple)
+
+ClassAssertion(:Производитель :Apple)
+
+# Individual: :Apple_A15_Bionic (:Apple_A15_Bionic)
+
+ClassAssertion(:Процессор :Apple_A15_Bionic)
+DataPropertyAssertion(:Имеет_частоту :Apple_A15_Bionic "3.46"^^xsd:float)
+DataPropertyAssertion(:Имеет_число_ядер :Apple_A15_Bionic "6"^^xsd:integer)
+
+# Individual: :Apple_A15_GPU (:Apple_A15_GPU)
+
+ClassAssertion(:Видеоускоритель :Apple_A15_GPU)
+ObjectPropertyAssertion(:Произведен :Apple_A15_GPU :Apple)
+
+# Individual: :Google (:Google)
+
+ClassAssertion(:Производитель :Google)
+
+# Individual: :Google_Pixel_6 (:Google_Pixel_6)
+
+ClassAssertion(:Телефон :Google_Pixel_6)
+ObjectPropertyAssertion(:Имеет :Google_Pixel_6 :Adreno_660)
+ObjectPropertyAssertion(:Имеет :Google_Pixel_6 :Qualcomm_Snapdragon_888)
+ObjectPropertyAssertion(:Имеет :Google_Pixel_6 :МОДУЛЬ_WIFI_BLUETOOTH)
+ObjectPropertyAssertion(:Имеет :Google_Pixel_6 <https://github.com/AlexeyMaz/PhonesOntology#128ГБ>)
+ObjectPropertyAssertion(:Имеет :Google_Pixel_6 <https://github.com/AlexeyMaz/PhonesOntology#16ГБ_LPDDR6>)
+ObjectPropertyAssertion(:Имеет :Google_Pixel_6 <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_4000мА*ч>)
+ObjectPropertyAssertion(:Имеет :Google_Pixel_6 <https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED>)
+ObjectPropertyAssertion(:Произведен :Google_Pixel_6 :Google)
+ObjectPropertyAssertion(:Работает_на :Google_Pixel_6 :Android)
+ObjectPropertyAssertion(:Сделан_из :Google_Pixel_6 :Металл)
+DataPropertyAssertion(:Вес :Google_Pixel_6 "171"^^xsd:integer)
+DataPropertyAssertion(:Гарантия_мес :Google_Pixel_6 "18"^^xsd:integer)
+DataPropertyAssertion(:Имеет_емкость :Google_Pixel_6 "4000"^^xsd:integer)
+DataPropertyAssertion(:Имеет_цену :Google_Pixel_6 "37000"^^xsd:integer)
+DataPropertyAssertion(:Цвет :Google_Pixel_6 "Черный"^^xsd:string)
+
+# Individual: :HiSilicon_Kirin_9000 (:HiSilicon_Kirin_9000)
+
+ClassAssertion(:Процессор :HiSilicon_Kirin_9000)
+DataPropertyAssertion(:Имеет_частоту :HiSilicon_Kirin_9000 "3.13"^^xsd:float)
+DataPropertyAssertion(:Имеет_число_ядер :HiSilicon_Kirin_9000 "8"^^xsd:integer)
+
+# Individual: :Huawei (:Huawei)
+
+ClassAssertion(:Производитель :Huawei)
+
+# Individual: :IOS (:IOS)
+
+ClassAssertion(:Операционная_система :IOS)
+
+# Individual: :Mali (:Mali)
+
+ClassAssertion(:Производитель :Mali)
+
+# Individual: :Mali-G77_MC9 (:Mali-G77_MC9)
+
+ClassAssertion(:Видеоускоритель :Mali-G77_MC9)
+ObjectPropertyAssertion(:Произведен :Mali-G77_MC9 :Mali)
+
+# Individual: :Mali-G78_MP14 (:Mali-G78_MP14)
+
+ClassAssertion(:Видеоускоритель :Mali-G78_MP14)
+ObjectPropertyAssertion(:Произведен :Mali-G78_MP14 :Mali)
+
+# Individual: :Mali-G78_MP24 (:Mali-G78_MP24)
+
+ClassAssertion(:Видеоускоритель :Mali-G78_MP24)
+ObjectPropertyAssertion(:Произведен :Mali-G78_MP24 :Mali)
+
+# Individual: :Mediatek_Dimensity_1200 (:Mediatek_Dimensity_1200)
+
+ClassAssertion(:Процессор :Mediatek_Dimensity_1200)
+DataPropertyAssertion(:Имеет_частоту :Mediatek_Dimensity_1200 "3.0"^^xsd:float)
+DataPropertyAssertion(:Имеет_число_ядер :Mediatek_Dimensity_1200 "8"^^xsd:integer)
+
+# Individual: :OnePlus (:OnePlus)
+
+ClassAssertion(:Производитель :OnePlus)
+
+# Individual: :OnePlus_9 (:OnePlus_9)
+
+ClassAssertion(:Телефон :OnePlus_9)
+ObjectPropertyAssertion(:Имеет :OnePlus_9 :HiSilicon_Kirin_9000)
+ObjectPropertyAssertion(:Имеет :OnePlus_9 :Mali-G77_MC9)
+ObjectPropertyAssertion(:Имеет :OnePlus_9 :МОДУЛЬ_WIFI_BLUETOOTH)
+ObjectPropertyAssertion(:Имеет :OnePlus_9 <https://github.com/AlexeyMaz/PhonesOntology#128ГБ>)
+ObjectPropertyAssertion(:Имеет :OnePlus_9 <https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5>)
+ObjectPropertyAssertion(:Имеет :OnePlus_9 <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_4000мА*ч>)
+ObjectPropertyAssertion(:Имеет :OnePlus_9 <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD>)
+ObjectPropertyAssertion(:Произведен :OnePlus_9 :OnePlus)
+ObjectPropertyAssertion(:Работает_на :OnePlus_9 :Android)
+ObjectPropertyAssertion(:Сделан_из :OnePlus_9 :Металл)
+DataPropertyAssertion(:Вес :OnePlus_9 "200"^^xsd:integer)
+DataPropertyAssertion(:Гарантия_мес :OnePlus_9 "12"^^xsd:integer)
+DataPropertyAssertion(:Имеет_емкость :OnePlus_9 "4000"^^xsd:integer)
+DataPropertyAssertion(:Имеет_цену :OnePlus_9 "30000"^^xsd:integer)
+DataPropertyAssertion(:Цвет :OnePlus_9 "Черный"^^xsd:string)
+
+# Individual: :Qualcomm_Snapdragon_888 (:Qualcomm_Snapdragon_888)
+
+ClassAssertion(:Процессор :Qualcomm_Snapdragon_888)
+DataPropertyAssertion(:Имеет_частоту :Qualcomm_Snapdragon_888 "2.84"^^xsd:float)
+DataPropertyAssertion(:Имеет_число_ядер :Qualcomm_Snapdragon_888 "8"^^xsd:integer)
+
+# Individual: :Realme (:Realme)
+
+ClassAssertion(:Производитель :Realme)
+
+# Individual: :Samsung (:Samsung)
+
+ClassAssertion(:Производитель :Samsung)
+
+# Individual: :Samsung_Exynos_2100 (:Samsung_Exynos_2100)
+
+ClassAssertion(:Процессор :Samsung_Exynos_2100)
+DataPropertyAssertion(:Имеет_частоту :Samsung_Exynos_2100 "2.9"^^xsd:float)
+DataPropertyAssertion(:Имеет_число_ядер :Samsung_Exynos_2100 "8"^^xsd:integer)
+
+# Individual: :Samsung_Galaxy_S21 (:Samsung_Galaxy_S21)
+
+ClassAssertion(:Телефон :Samsung_Galaxy_S21)
+ObjectPropertyAssertion(:Имеет :Samsung_Galaxy_S21 :Mali-G78_MP14)
+ObjectPropertyAssertion(:Имеет :Samsung_Galaxy_S21 :Samsung_Exynos_2100)
+ObjectPropertyAssertion(:Имеет :Samsung_Galaxy_S21 :МОДУЛЬ_WIFI_BLUETOOTH)
+ObjectPropertyAssertion(:Имеет :Samsung_Galaxy_S21 <https://github.com/AlexeyMaz/PhonesOntology#128ГБ>)
+ObjectPropertyAssertion(:Имеет :Samsung_Galaxy_S21 <https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5>)
+ObjectPropertyAssertion(:Имеет :Samsung_Galaxy_S21 <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_5000мА*ч>)
+ObjectPropertyAssertion(:Имеет :Samsung_Galaxy_S21 <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED>)
+ObjectPropertyAssertion(:Произведен :Samsung_Galaxy_S21 :Samsung)
+ObjectPropertyAssertion(:Работает_на :Samsung_Galaxy_S21 :Android)
+ObjectPropertyAssertion(:Сделан_из :Samsung_Galaxy_S21 :Стекло)
+DataPropertyAssertion(:Вес :Samsung_Galaxy_S21 "189"^^xsd:integer)
+DataPropertyAssertion(:Гарантия_мес :Samsung_Galaxy_S21 "18"^^xsd:integer)
+DataPropertyAssertion(:Имеет_емкость :Samsung_Galaxy_S21 "5000"^^xsd:integer)
+DataPropertyAssertion(:Имеет_цену :Samsung_Galaxy_S21 "40000"^^xsd:integer)
+DataPropertyAssertion(:Цвет :Samsung_Galaxy_S21 "Черный"^^xsd:string)
+
+# Individual: :Xiaomi (:Xiaomi)
+
+ClassAssertion(:Производитель :Xiaomi)
+
+# Individual: :Xiaomi_Mi_11 (:Xiaomi_Mi_11)
+
+ClassAssertion(:Телефон :Xiaomi_Mi_11)
+ObjectPropertyAssertion(:Имеет :Xiaomi_Mi_11 :Mali-G78_MP24)
+ObjectPropertyAssertion(:Имеет :Xiaomi_Mi_11 :Mediatek_Dimensity_1200)
+ObjectPropertyAssertion(:Имеет :Xiaomi_Mi_11 :МОДУЛЬ_WIFI_BLUETOOTH)
+ObjectPropertyAssertion(:Имеет :Xiaomi_Mi_11 <https://github.com/AlexeyMaz/PhonesOntology#6ГБ_LPDDR4X>)
+ObjectPropertyAssertion(:Имеет :Xiaomi_Mi_11 <https://github.com/AlexeyMaz/PhonesOntology#64ГБ>)
+ObjectPropertyAssertion(:Имеет :Xiaomi_Mi_11 <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_3000мА*ч>)
+ObjectPropertyAssertion(:Имеет :Xiaomi_Mi_11 <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD>)
+ObjectPropertyAssertion(:Произведен :Xiaomi_Mi_11 :Xiaomi)
+ObjectPropertyAssertion(:Работает_на :Xiaomi_Mi_11 :Android)
+ObjectPropertyAssertion(:Сделан_из :Xiaomi_Mi_11 :Пластик)
+DataPropertyAssertion(:Вес :Xiaomi_Mi_11 "150"^^xsd:integer)
+DataPropertyAssertion(:Гарантия_мес :Xiaomi_Mi_11 "12"^^xsd:integer)
+DataPropertyAssertion(:Имеет_емкость :Xiaomi_Mi_11 "3000"^^xsd:integer)
+DataPropertyAssertion(:Имеет_цену :Xiaomi_Mi_11 "10000"^^xsd:integer)
+DataPropertyAssertion(:Цвет :Xiaomi_Mi_11 "Зеленый"^^xsd:string)
+
+# Individual: :iPhone_15 (:iPhone_15)
+
+ClassAssertion(:Телефон :iPhone_15)
+ObjectPropertyAssertion(:Имеет :iPhone_15 :Apple_A15_Bionic)
+ObjectPropertyAssertion(:Имеет :iPhone_15 :Apple_A15_GPU)
+ObjectPropertyAssertion(:Имеет :iPhone_15 :МОДУЛЬ_WIFI_BLUETOOTH)
+ObjectPropertyAssertion(:Имеет :iPhone_15 <https://github.com/AlexeyMaz/PhonesOntology#256ГБ>)
+ObjectPropertyAssertion(:Имеет :iPhone_15 <https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5>)
+ObjectPropertyAssertion(:Имеет :iPhone_15 <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_5000мА*ч>)
+ObjectPropertyAssertion(:Имеет :iPhone_15 <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED>)
+ObjectPropertyAssertion(:Произведен :iPhone_15 :Apple)
+ObjectPropertyAssertion(:Работает_на :iPhone_15 :IOS)
+ObjectPropertyAssertion(:Сделан_из :iPhone_15 :Стекло)
+DataPropertyAssertion(:Вес :iPhone_15 "176"^^xsd:integer)
+DataPropertyAssertion(:Гарантия_мес :iPhone_15 "24"^^xsd:integer)
+DataPropertyAssertion(:Имеет_емкость :iPhone_15 "5000"^^xsd:integer)
+DataPropertyAssertion(:Имеет_цену :iPhone_15 "110000"^^xsd:integer)
+DataPropertyAssertion(:Цвет :iPhone_15 "Красный"^^xsd:string)
+
+# Individual: :МОДУЛЬ_WIFI_BLUETOOTH (:МОДУЛЬ_WIFI_BLUETOOTH)
+
+ClassAssertion(:Модуль :МОДУЛЬ_WIFI_BLUETOOTH)
+DataPropertyAssertion(:Bluetooth :МОДУЛЬ_WIFI_BLUETOOTH "true"^^xsd:boolean)
+DataPropertyAssertion(:WIFI :МОДУЛЬ_WIFI_BLUETOOTH "true"^^xsd:boolean)
+
+# Individual: :Металл (:Металл)
+
+ClassAssertion(:Материал_корпуса :Металл)
+
+# Individual: :Пластик (:Пластик)
+
+ClassAssertion(:Материал_корпуса :Пластик)
+
+# Individual: :Стекло (:Стекло)
+
+ClassAssertion(:Материал_корпуса :Стекло)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#12ГБ_LPDDR5X> (<https://github.com/AlexeyMaz/PhonesOntology#12ГБ_LPDDR5X>)
+
+ClassAssertion(:ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#12ГБ_LPDDR5X>)
+DataPropertyAssertion(:Имеет_объем_ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#12ГБ_LPDDR5X> "12"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#128ГБ> (<https://github.com/AlexeyMaz/PhonesOntology#128ГБ>)
+
+ClassAssertion(:ПЗУ <https://github.com/AlexeyMaz/PhonesOntology#128ГБ>)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#16ГБ> (<https://github.com/AlexeyMaz/PhonesOntology#16ГБ>)
+
+ClassAssertion(:ПЗУ <https://github.com/AlexeyMaz/PhonesOntology#16ГБ>)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#16ГБ_LPDDR6> (<https://github.com/AlexeyMaz/PhonesOntology#16ГБ_LPDDR6>)
+
+ClassAssertion(:ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#16ГБ_LPDDR6>)
+DataPropertyAssertion(:Имеет_объем_ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#16ГБ_LPDDR6> "16"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#256ГБ> (<https://github.com/AlexeyMaz/PhonesOntology#256ГБ>)
+
+ClassAssertion(:ПЗУ <https://github.com/AlexeyMaz/PhonesOntology#256ГБ>)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#32ГБ> (<https://github.com/AlexeyMaz/PhonesOntology#32ГБ>)
+
+ClassAssertion(:ПЗУ <https://github.com/AlexeyMaz/PhonesOntology#32ГБ>)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#4ГБ_LPDDR4> (<https://github.com/AlexeyMaz/PhonesOntology#4ГБ_LPDDR4>)
+
+ClassAssertion(:ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#4ГБ_LPDDR4>)
+DataPropertyAssertion(:Имеет_объем_ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#4ГБ_LPDDR4> "4"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#6ГБ_LPDDR4X> (<https://github.com/AlexeyMaz/PhonesOntology#6ГБ_LPDDR4X>)
+
+ClassAssertion(:ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#6ГБ_LPDDR4X>)
+DataPropertyAssertion(:Имеет_объем_ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#6ГБ_LPDDR4X> "6"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#64ГБ> (<https://github.com/AlexeyMaz/PhonesOntology#64ГБ>)
+
+ClassAssertion(:ПЗУ <https://github.com/AlexeyMaz/PhonesOntology#64ГБ>)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5> (<https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5>)
+
+ClassAssertion(:ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5>)
+DataPropertyAssertion(:Имеет_объем_ОЗУ <https://github.com/AlexeyMaz/PhonesOntology#8ГБ_LPDDR5> "8"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_3000мА*ч> (<https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_3000мА*ч>)
+
+ClassAssertion(:Батарея <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_3000мА*ч>)
+DataPropertyAssertion(:Имеет_емкость <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_3000мА*ч> "3000"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_4000мА*ч> (<https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_4000мА*ч>)
+
+ClassAssertion(:Батарея <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_4000мА*ч>)
+DataPropertyAssertion(:Имеет_емкость <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_4000мА*ч> "4000"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_5000мА*ч> (<https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_5000мА*ч>)
+
+ClassAssertion(:Батарея <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_5000мА*ч>)
+DataPropertyAssertion(:Имеет_емкость <https://github.com/AlexeyMaz/PhonesOntology#Аккумулятор_5000мА*ч> "5000"^^xsd:integer)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED> (<https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED>)
+
+ClassAssertion(:Дисплей <https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED>)
+DataPropertyAssertion(:Имеет_диагональ <https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED> "5.8"^^xsd:float)
+DataPropertyAssertion(:Имеет_разрешение_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED> "2436"^^xsd:integer)
+DataPropertyAssertion(:Имеет_тип_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_5.8;_1125_x_2436;_OLED> "OLED"^^xsd:string)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD> (<https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD>)
+
+ClassAssertion(:Дисплей <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD>)
+DataPropertyAssertion(:Имеет_диагональ <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD> "6.2"^^xsd:float)
+DataPropertyAssertion(:Имеет_разрешение_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD> "1520"^^xsd:integer)
+DataPropertyAssertion(:Имеет_тип_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.2;_720_x_1520;_IPS_LCD> "IPS"^^xsd:string)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD> (<https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD>)
+
+ClassAssertion(:Дисплей <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD>)
+DataPropertyAssertion(:Имеет_диагональ <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD> "6.4"^^xsd:float)
+DataPropertyAssertion(:Имеет_разрешение_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD> "2340"^^xsd:integer)
+DataPropertyAssertion(:Имеет_тип_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.4;_1080_x_2340;_TFT-LCD> "TFT"^^xsd:string)
+
+# Individual: <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED> (<https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED>)
+
+ClassAssertion(:Дисплей <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED>)
+DataPropertyAssertion(:Имеет_диагональ <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED> "6.5"^^xsd:float)
+DataPropertyAssertion(:Имеет_разрешение_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED> "2400"^^xsd:integer)
+DataPropertyAssertion(:Имеет_тип_дисплея <https://github.com/AlexeyMaz/PhonesOntology#Экран:_6.5;_1080_x_2400;_Super_AMOLED> "Super_AMOLED"^^xsd:string)
+
+
+)
